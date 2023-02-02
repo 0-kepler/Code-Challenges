@@ -19,7 +19,7 @@ string encode(string p, int N, int k){
 
 		// Shift plaintext
 		char current = toupper(p[i]);
-		out += static_cast<char>((current - 65 + k) % 26) + 65;
+		out += ((current - 65 + k) % 26) + 65;
 		
 	}
 
